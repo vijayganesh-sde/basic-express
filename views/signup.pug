@@ -1,0 +1,30 @@
+html 
+    head 
+        title Sign Up  
+    body 
+        form(action="/signup/danks" method="POST")
+            label(for=id) 
+                span Enter an email ID
+            br
+            input(type="text", name="id" required)
+            br
+            label(for=pass)
+                span Enter Password
+            br
+            input(type="text", name="pass" required)
+            br
+            label(for=repass)
+                span Re-Enter Password
+            br
+            input(type="text", name="repass" required)
+            br
+            a(class="submit")
+                button(type=submit) Sign In
+            div(id="pass_err" )
+        
+        
+            
+                
+                
+            
+            

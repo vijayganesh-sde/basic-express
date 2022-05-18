@@ -1,0 +1,22 @@
+html 
+    head 
+        title Sign Up
+    body 
+        form(action="/login/danks" method="POST")
+            label(for=id) 
+                span Enter an email ID
+            br
+            input(type="text" name="log_id" required)
+            br
+            label(for=pass)
+                span Enter Password
+            br
+            
+            input(type="password" name="log_pass" required)
+            br
+            
+            button(type=submit) Log in
+            br
+            br
+            div Don't have an account? 
+                a(href="/signup", style="color:blue") click here to Register
