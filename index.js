@@ -8,7 +8,7 @@ var app = expres();
 var alert=require('alert');
 var mongoose = require('mongoose');
 mongoose.Promise=global.Promise;
-const CONNECTION_URI=process.env.MONDODB_URI || 'mongodb://localhost/my_db'
+const CONNECTION_URI=process.env.MONDODB_URI || 'mongodb+srv://vijay04:loundry04@cluster0.qtdee.mongodb.net/test';
 const port=process.env.PORT || 5000;
 mongoose.connect(CONNECTION_URI);
 var personSchema = mongoose.Schema({
