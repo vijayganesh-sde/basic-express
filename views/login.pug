@@ -4,19 +4,19 @@ html
     body 
         form(action="/login/danks" method="POST")
             label(for=id) 
-                span Enter an email ID
+                span(style="margin-left:20px") Enter an email ID
             br
-            input(type="text" name="log_id" required)
+            input(type="text" name="log_id" required style="margin-left:20px")
             br
             label(for=pass)
-                span Enter Password
+                span(style="margin-left:20px") Enter Password
             br
             
-            input(type="password" name="log_pass" required)
+            input(type="password" name="log_pass" required style="margin-left:20px")
             br
             
-            button(type=submit) Log in
+            button(type=submit style="margin-left:20px") Log in
             br
             br
-            div Don't have an account? 
+            div(style="margin-left:20px") Don't have an account? 
                 a(href="/signup", style="color:blue") click here to Register

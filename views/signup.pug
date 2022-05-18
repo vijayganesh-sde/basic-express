@@ -4,22 +4,22 @@ html
     body 
         form(action="/signup/danks" method="POST")
             label(for=id) 
-                span Enter an email ID
+                span(style="margin-left:20px") Enter an email ID
             br
-            input(type="text", name="id" required)
+            input(type="text", name="id" required style="margin-left:20px")
             br
             label(for=pass)
-                span Enter Password
+                span(style="margin-left:20px") Enter Password
             br
-            input(type="text", name="pass" required)
+            input(type="password", name="pass" required style="margin-left:20px")
             br
             label(for=repass)
-                span Re-Enter Password
+                span(style="margin-left:20px") Re-Enter Password
             br
-            input(type="text", name="repass" required)
+            input(type="password", name="repass" required style="margin-left:20px")
             br
-            a(class="submit")
-                button(type=submit) Sign In
+            br
+            button(type=submit style="margin-left:20px") Sign In
             div(id="pass_err" )
         
         
