@@ -7,8 +7,10 @@ var upload = multer();
 var app = expres();
 var alert=require('alert');
 var mongoose = require('mongoose');
+mongoose.Promise=global.Promise;
+const CONNECTION_URI=process.env.MONDODB_URI || 'mongodb://localhost/my_db'
 const port=process.env.PORT || 5000;
-mongoose.connect('mongodb://localhost/my_db');
+mongoose.connect(CONNECTION_URI);
 var personSchema = mongoose.Schema({
     name: String,
     roll_no: Number,
