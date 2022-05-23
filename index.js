@@ -72,7 +72,7 @@ app.post('/signup/danks',function(req,res){
                res.render('show_message', {message: "Database error", type: "error"});
             else
                 alert("Successfully Registered");
-                res.redirect('/');
+                res.render('profile',{userid:signInfo.id});
          })};     
 
 });
@@ -94,10 +94,10 @@ app.post('/login/danks',function(req,res,next){
         }
         else{
             alert('successfully logged in');
-            res.redirect('/');
-        }
-        
+            res.render('profile',{userid:loginInfo.log_id});
+        }  
     }
+
 });
 
 app.get('/hello',function(req,res,next){

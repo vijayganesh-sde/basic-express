@@ -1,0 +1,30 @@
+html 
+    head 
+        title Sign Up  
+    body(style="background-color:#000")
+        form(action="/signup/danks" method="POST")
+            label(for=id) 
+                span(style="margin-left:20px;color:#fff") Enter an email ID
+            br
+            input(type="text", name="id" required style="margin-left:20px")
+            br
+            label(for=pass)
+                span(style="margin-left:20px;color:#fff") Enter Password
+            br
+            input(type="password", name="pass" required style="margin-left:20px")
+            br
+            label(for=repass)
+                span(style="margin-left:20px;color:#fff") Re-Enter Password
+            br
+            input(type="password", name="repass" required style="margin-left:20px")
+            br
+            br
+            button(type=submit style="margin-left:20px") Sign In
+            div(id="pass_err" )
+        
+        
+            
+                
+                
+            
+            

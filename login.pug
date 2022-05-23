@@ -1,0 +1,22 @@
+html 
+    head 
+        title Log In
+    body(style="background-color: #000")
+        form(action="/login/danks" method="POST" )
+            label(for=id) 
+                span(style="margin-left:20px;color:#fff") Enter an email ID
+            br
+            input(type="text" name="log_id" required style="margin-left:20px")
+            br
+            label(for=pass)
+                span(style="margin-left:20px;color:#fff") Enter Password
+            br
+            
+            input(type="password" name="log_pass" required style="margin-left:20px")
+            br
+            br
+            button(type=submit style="margin-left:20px") Log in
+            br
+            br
+            div(style="margin-left:20px;color:#fff")  New User? 
+                a(href="/signup", style="color:blue;color:#fff") click here to Register

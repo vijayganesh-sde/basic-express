@@ -1,0 +1,74 @@
+html
+    head  
+        
+    body(style="background-color:#000")
+        div(class="header", style="color:#fff;position:absolute;top:1px;background-color:#505050;height:60px;width:98%;margin-right: auto;margin-left: auto;padding-left: 15px;padding-right: 15px;")
+            span(style="margin-left:auto;position:absolute;top:40%") TECHNICAL REGISTERATION PORTAL            
+            a(href="/signup", style="color:#fff;text-decoration:none;margin-top:5%;margin-left:auto;margin-right: auto;position:absolute;right:3%;bottom:35%")
+                |Register
+            a(href="/login", style="color:#fff;text-decoration:none;margin-top:5%;margin-left:auto;margin-right: auto;position:absolute;right:10%;bottom:35%")
+                |Log In
+        .container(style="margin-left:30%;color:#fff")
+            form(action="/person", method="POST")
+                div(style="padding:10px 10px 10px 10px;margin-top:100px") 
+                    |Name*              
+                    br
+                    input(name="nam", type="text")
+                    br
+                div(style="padding:10px 10px 10px 10px") 
+                    |Roll no*
+                
+                    br
+                    input(name="roll", type="text") 
+                    br
+                div(style="padding:10px 10px 10px 10px")
+                    |Department*
+                
+                    br
+                    input(name="dept",type="text")
+                div(style="padding:10px 10px 10px 10px") 
+                    |Your Device's Operating System
+                    br
+                    input(name="os",type="checkbox" value="MacOS")
+                    label(for="os")
+                        span MacOS
+                    br
+                    input(name="os",type="checkbox" value="Windows")
+                    label(for="os")
+                        span Windows 
+                    br 
+                    input(name="os",type="checkbox" value="Ubuntu")
+                    label(for="os")
+                        span Ubuntu
+                    br
+                    input(name="dept",type="checkbox" value="Linux")
+                    label(for="dept")
+                        span Linux
+                    br
+                    input(name="os",type="checkbox" value="Unix")
+                    label(for="os")
+                        span Unix 
+                    br
+                    input(name="os",type="checkbox" value="Others")
+                    label(for="os")
+                        span Others
+                div(style="padding:10px 10px 10px 10px") 
+                    |Coding Experience
+                    br
+                    input(name="codeExp", type="text")
+                div(style="padding:10px 10px 10px 10px")
+                    | Your Choice of Domains during Inductions*
+                    br 
+                    input(name="dom",type="checkbox" value="Web Development")
+                    label(for="dom")
+                        span Web Development
+                    br
+                    input(name="dom",type="checkbox" value="App Development")
+                    label(for="dom")
+                        span App Development
+                    br
+                    input(name="dom",type="checkbox" value="System Administrator")
+                    label(for="dom")
+                        span System Administrator 
+                    br
+                button(type="submit" style="background-color:#0000ff;color:#fff") Submit
